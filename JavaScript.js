@@ -1,7 +1,7 @@
 
 class Pokemon {
     constructor() {
-        this.name = "имя";
+        this.name = "Покемон";
         this.photo = "Картинка";
         this.hp = 1000;
         this.hunger = "80";
@@ -13,14 +13,27 @@ class Pokemon {
         let blockPoke = document.querySelector('.PokeDiv');
         let out = document.querySelector('.outPoke');
         
-        out.innerHTML += "Новый Покемон";
+        out.innerHTML += "<hr>";
         out.append(blockPoke);
         console.log(out)
         //blokPoke.innerHTML += newPoke;
+    }
+    rondomPhoto() {
+        let numPhoto = Math.round(Math.random() * 5);
+        console.log(numPhoto)
+        var arrPhoto = [];
+        let divImg = document.querySelector('.divImg');
+        [...divImg.getElementsByTagName('img')].map((e,i)=>
+        arrPhoto.push(e.src)
+        );
+        console.log(arrPhoto[1])
+        document.querySelector('.PokePhoto').innerHTML = `<img src="${arrPhoto[numPhoto]}">`;
+        }
+    argumentPokemon() {
         let PokeName = document.querySelector('.PokeName');
         PokeName.innerHTML = "Имя: " + this.name;
-        let PokePhoto = document.querySelector('.PokePhoto');
-        PokePhoto.innerHTML = this.photo;
+        //let PokePhoto = document.querySelector('.PokePhoto');
+        //PokePhoto.innerHTML = `<img src="${arrPhoto[numPhoto]}">`;
         let PokeHP = document.querySelector('.PokeHP');
         PokeHP.innerHTML = "HP: " + this.hp;
         let PokeHunger = document.querySelector('.PokeHunger');
@@ -30,17 +43,16 @@ class Pokemon {
         let PokeDepression = document.querySelector('.PokeDepression');
         PokeDepression.innerHTML = "Депрессия: " + this.depression;
     }
+    
 }
 
-/*let arrPokemon = [
-    new Pokemon("имя")
-];*/
-/*function createPokemon() {
-    console.log()
-}*/
 
 const asd = new Pokemon();
 
 function callPokemon() {  
     asd.ozb();
+    asd.rondomPhoto();
+    asd.argumentPokemon();
 }
+
+
