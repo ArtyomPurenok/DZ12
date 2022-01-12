@@ -1,0 +1,21 @@
+.PokeDiv {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+.bord {
+    border: 1px solid black;
+}
+.PokeName p {
+    font-size: 20px;
+}
+.PokeName {
+    padding-left: 30px;
+}
+.PokePhoto {
+    text-align: center;
+}
+.PokeName {
+    color: red;
+}
