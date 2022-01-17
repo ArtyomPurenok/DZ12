@@ -1,31 +1,125 @@
+body {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/999/730/463/yellow-fiction-cap-pikachu-detective-hd-wallpaper-preview.jpg);
+    background-size: 100% 100%;
+}
 .PokeDiv {
-    margin: auto;
     align-items: center;
-    width: 300px;
+    width: 250px;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: rgb(0, 255, 234);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHyo5cLAf4gZDlOwndUMKE3RzNwyOFxsNSow&usqp=CAU);
+    border: 7px solid gold;
+}
+.outPoke, .rip{
+display: none;
+}
+.upP {
+    font-family: Monotype Corsiva;
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.NameHP {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ActionButton {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.SizeBTN {
+    width: 80px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 10px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    border: 2px solid gold;
+}
+.SizeBTN:hover,
+.SizeBTN:active {
+  background-color: rgb(255, 217, 0);
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+
+
+.PokeName {
+    font-family: Lucida Console;
+    font-weight: 600;
+    color: rgb(0, 15, 219);
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.Forest {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    background-image: url(https://kartinki-dlya-srisovki.ru/wp-content/uploads/2019/09/kartinki-lesa-dlya-detey-3.jpg);
+    background-size: 100% 100%;
+    border: 3px solid gold;
+    box-shadow: 0 0  20px DimGrey;
+}
+.Forest image {
+    margin-top: 50px;
+}
+
+.PokeHP {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+    font-family: sans-serif;
 }
 hr {
-    margin: 40px;
+    width: 200px;
+    padding: 0px;
+    margin: 1px;
+    margin-left: 20px;
+}
+.outPoke2 {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-column-gap: 40px;
+   grid-row-gap: 20px;
 }
 .divBtn {
     text-align: center;
 }
-button {
-    margin-bottom: 50px;
-    width: 150px;
-    height: 50px;
+.btn {
+    width: 170px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 10px;
+    height: 60px;
+    background-color: rgba(231, 231, 231, 0.5);
+    border-radius: 20px;
+    border: 5px solid gold;
+}
+.btn:hover,
+.btn:active {
+  background-color: rgb(255, 217, 0);
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
 }
 .bord {
+    font-family: Lucida Console;
     padding: 5px;
     font-weight: 600;
 }
-.PokeName {
-    padding: 15px;
-    padding-left: 30px;
-    font-size: 20px;
-}
+
 .PokePhoto {
     height: 100px;
     text-align: center;
@@ -34,14 +128,13 @@ button {
     width: auto;
     height: 100%;
 }
-.PokeName {
-    font-weight: 600;
-    color: rgb(0, 15, 219);
-}
+
 .divImg img {
     width: 0px;
     height: 0px;
 }
-.PokeHP {
-    color: red;
+.rip {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
 }
